@@ -1,0 +1,7 @@
+*.pyc
+*.pid
+.idea/
+*.xml
+*.iml
+sql.txt
+git.txt
