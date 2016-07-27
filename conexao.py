@@ -9,16 +9,16 @@ class MySQL:
 
     def get_conexao(self):
         _host = 'localhost'
-        _name = 'jambu'
+        _name = 'namedatabase'
         _user = 'root'
-        _passwd = ''
+        _passwd = 'passwd'
         db = msc.connect(host=_host, database=_name, user=_user, passwd=_passwd)
         return db
 
     def get_conexao2(self):
         _host = 'localhost'
-        _name = 'jambu'
+        _name = 'namedatabase'
         _user = 'root'
-        _passwd = ''
+        _passwd = 'passwd'
         db = mdb.connect(_host, _user, _passwd, _name)
         return db

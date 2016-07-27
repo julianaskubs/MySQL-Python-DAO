@@ -1,9 +1,11 @@
-from cliente import ClienteDao
 from datetime import date
+from cliente import ClienteDao, Cliente
 
 
 class Run:
     def __init__(self):
+        # a ideia eh que esse cara nunca tenha de fato um cliente preenchido,
+        # que ele sirva apenas para chamada de funcoes
         self.clienteDao = ClienteDao()
 
     def lista_clientes(self):
@@ -26,7 +28,7 @@ class Run:
         clienteDao.altera(1)
 
     def insere_cliente(self):
-        clienteDao = ClienteDao(nome='Teste ju', email='teste3@teste.com', end='rua dos testes',
+        clienteDao = ClienteDao(nome='Teste ju nariga', email='teste3@teste.com', end='rua dos testes',
                                 tel='5555-7777', dt_nasc=date(2001, 05, 20))
         clienteDao.insere()
 
@@ -35,8 +37,8 @@ class Run:
 
 
 Teste = Run()
-Teste.lista_clientes()
-Teste.altera_cliente(1)
-Teste.insere_cliente()
-Teste.deleta_cliente(3)
+# Teste.lista_clientes()
+# Teste.altera_cliente(1)
+# Teste.insere_cliente()
+# Teste.deleta_cliente(3)
 

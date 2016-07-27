@@ -18,6 +18,7 @@ class ClienteDao(Cliente):
     def __init__(self, **kwargs):
         Cliente.__init__(self, **kwargs)
 
+
     def insere(self):
         try:
             dados = {'nome': self.nome, 'end': self.end, 'email': self.email,
